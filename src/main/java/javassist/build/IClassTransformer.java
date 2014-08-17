@@ -9,6 +9,6 @@ import javassist.CtClass;
  * @author SNI
  */
 public interface IClassTransformer {
-	void applyTransformations(CtClass ctClass);
-	boolean shouldTransform(CtClass ctClass);
+	void applyTransformations(CtClass ctClass) throws JavassistBuildException;
+	boolean shouldTransform(CtClass ctClass) throws JavassistBuildException;
 }
