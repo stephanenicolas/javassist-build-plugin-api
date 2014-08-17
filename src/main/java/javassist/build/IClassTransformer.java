@@ -8,7 +8,7 @@ import javassist.CtClass;
  * right after javac compiled them.
  * @author SNI
  */
-public interface ClassTransformer {
+public interface IClassTransformer {
 	void applyTransformations(CtClass ctClass);
 	boolean shouldTransform(CtClass ctClass);
 }
