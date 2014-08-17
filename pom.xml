@@ -8,7 +8,7 @@
 		<version>7</version>
 	</parent>
 
-	<groupId>com.github.stephanenicolas</groupId>
+	<groupId>com.github.stephanenicolas.javassist</groupId>
 	<artifactId>javassist-build-plugin-api</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
