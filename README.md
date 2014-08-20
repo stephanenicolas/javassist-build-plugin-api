@@ -1,4 +1,4 @@
-javassist-build-plugin-api
+javassist-build-plugin-api [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.stephanenicolas.javassist/javassist-build-plugin-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.stephanenicolas.javassist/javassist-build-plugin-api)
 ==========================
 
 A unified API to create class transformers based on javassist during maven and gradle builds.
