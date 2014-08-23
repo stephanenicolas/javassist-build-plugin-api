@@ -6,7 +6,7 @@ javassist-build-plugin-api [![Maven Central](https://maven-badges.herokuapp.com/
 
 This API allows to create `IClassTransfomer`s that can be used interchangeably in gradle and maven builds.
 
-The API introduces a few classes and interfaces in the package name space of [Javassist](//github.com/jboss-javassist/javassist) `javassist.build`.  
+It introduces a few classes and interfaces in the package name space of [Javassist](//github.com/jboss-javassist/javassist) : `javassist.build`.  
 
 
 ## Usage 
