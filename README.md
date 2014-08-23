@@ -1,16 +1,29 @@
 javassist-build-plugin-api [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.stephanenicolas.javassist/javassist-build-plugin-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.stephanenicolas.javassist/javassist-build-plugin-api)
 ==========================
+**Common API to transform classes via Javassist during gradle and maven builds. Works on Android too.**
 
-A unified API to create class transformers based on javassist during maven and gradle builds.
+## Why ?
 
-### Related to 
+This API allows to create `IClassTransfomer`s that can be used interchangeably in gradle and maven builds.
 
-the maven javassist plugin :
-* https://github.com/icon-Systemhaus-GmbH/javassist-maven-plugin
+The API introduces a few classes and interfaces in the package name space of [Javassist](//github.com/jboss-javassist/javassist) `javassist.build`.  
 
-the gradle javassist plugin :
-* https://github.com/darylteo/gradle-plugins
 
-AfterBurner and Mimic, two projects based on those plugins :
-* https://github.com/stephanenicolas/afterburner
-* https://github.com/stephanenicolas/mimic
+## Usage 
+
+Basically, you will define a [`IClassTransfomer`]() and use Javassist to perform transformations of classes (class files).
+
+For more instructions to use javassist based transfomations during builds, please refer to :
+
+* [Javassist Maven Plugin](//github.com/icon-Systemhaus-GmbH/javassist-maven-plugin)
+* [Javassist Gradle Plugin](//github.com/darylteo/javassist-gradle-plugin)
+* [Morpheus, Android gradle plugin](//github.com/stephanenicolas/morpheus)
+
+Some libs that may help to create powerfull transformers :
+* [AfterBurner](https://github.com/stephanenicolas/afterburner)
+* [Mimic](https://github.com/stephanenicolas/mimic)
+
+
+
+
+
