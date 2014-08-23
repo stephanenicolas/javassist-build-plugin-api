@@ -11,7 +11,14 @@ It introduces a few classes and interfaces in the package name space of [Javassi
 
 ## Usage 
 
-Basically, you will define a [`IClassTransfomer`]() and use Javassist to perform transformations of classes (class files).
+Basically, you will define a [`IClassTransfomer`](https://github.com/stephanenicolas/javassist-build-plugin-api/blob/master/src/main/java/javassist/build/IClassTransformer.java) and use Javassist to perform transformations of classes (class files).
+
+```java
+public interface IClassTransformer {
+	void applyTransformations(CtClass ctClass) throws JavassistBuildException;
+	boolean shouldTransform(CtClass ctClass) throws JavassistBuildException;
+}
+```
 
 For more instructions to use javassist based transfomations during builds, please refer to :
 
